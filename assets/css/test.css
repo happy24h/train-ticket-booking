@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Trebuchet MS",Sans-serif; */
+}
+
+#info-train {
+    margin-top: 40px;
+    background-color: #ddd;
+    padding-bottom: 55px;
+}
+
+.info-tickets-train {
+   
+    margin: 0 auto;
+    padding: 35px 0;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.container-info-train {
+    background-color: #ffffff;
+    padding: 13px 0 20px;
+
+}
+
+.info-tickets-train span {
+    margin-top: 12px;
+    border-top: 1px solid #fc761d;
+    padding: 0 100px;
+}
+
+.info-tickets-train div {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fc761d;
+}
+
+.info-tickets-train-2 {
+    text-align: center;
+}
+
+.info-tickets-train-2 p {
+    color: #32509a;
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.info-tickets-train-image {
+    background-image: url("../img/train-info.jpg" );
+    height: 176px;
+    background-size: cover;
+}
+
+.info-title-train {
+    margin: 0 auto;
+}
+
+.info-tickets-train-ul li{
+    list-style: none;
+    border-bottom: 2.5px solid #ddd;
+    height: 46px;
+    line-height: 55px;
+}
+.info-tickets-train-ul li i {
+    color: #f74545;
+    font-size: 20px;
+}
+.info-tickets-train-ul li span {
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #545d6a;
+}
+.info-tickets-train-ul li span:hover {
+    color: #16509a;
+}
+

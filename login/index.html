@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+
+    <form action="" method="POST" class="form" id="form-1">
+        <h3 class="heading">Sign up</h3>
+        <!-- <p class="desc">Cùng nhau học lập trình miễn phí❤️</p> -->
+
+        <div class="spacer"></div>
+
+        <div class="form-group">
+            <!-- <label for="fullname" class="form-label">Full name</label> -->
+            <input id="fullname" name="fullname" type="text" placeholder="Full name" class="form-control">
+            <span class="form-message"></span>
+            <small></small>
+        </div>
+
+        <div class="form-group">
+            <!-- <label for="email" class="form-label">Email</label> -->
+            <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+            <span class="form-message"></span>
+            <small></small>
+        </div>
+
+        <div class="form-group">
+            <!-- <label for="password" class="form-label">Password</label> -->
+            <input id="password" name="password" type="password" placeholder="Password" class="form-control">
+            <span class="form-message"></span>
+            <small></small>
+        </div>
+
+        <div class="form-group">
+            <!-- <label for="password_confirmation" class="form-label">Confirm password</label> -->
+            <input id="password_confirmation" name="password_confirmation" placeholder="Confirm password" type="password" class="form-control">
+            <span class="form-message"></span>
+            <small></small>
+        </div>
+
+        <button class="form-submit">Sign up</button>
+        <div class="signup-link">
+            not a member? <a href="#">Sign up</a>
+        </div>
+    </form>
+
+</div>
+<script src="validator.js"></script>
+<script>
+
+    // Mong muốn của chúng ta
+  Validator({
+      form: '#form-1', //key va value
+      errorSelector: '.form-message',
+      rules: [
+          // hàm gắn hàm
+          Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của các bạn'), // neu chua return (html dom) thi la undefined
+          // Validator.isRequired('#email'),
+          Validator.isEmail('#email'),// neu chua return (html dom) thi la undefined
+          Validator.minLength('#password', 6),
+          Validator.isRequired('#password_confirmation'),
+          Validator.isConfirmed('#password_confirmation', function () {
+              return document.querySelector('#form-1 #password').value;
+          }, 'Mật khẩu nhập lại không chính xác')
+      ],
+      onSubmit: function(data) {
+          // Call Api
+          console.log(data);
+      }
+  });
+
+
+</script>
+</body>
+</html>

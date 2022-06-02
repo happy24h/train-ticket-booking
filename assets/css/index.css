@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.footer-all{
+    color: #fff;
+    width: 100%;
+    background-color: #00264E;
+}
+.content-footer {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #00264E;
+}
+.footer-width {
+    width: 1200px;
+    padding: 70px 0 110px;
+    margin: 0 auto;
+    height: 100px;
+    display: inline-block;
+}
+.footer-float {
+    float: left;
+    margin-right: 40px;
+}
+.footer-float h1 {
+    color: #FFA300;
+}
+.footer-float p{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+.footer-float-img{
+    margin-top:5px ;
+}
+.footer-right {
+    border-left:none;
+    border-top:none;
+    border-right:none ;
+    border-bottom: 2px solid  #FFA300 ;
+    float: right;
+}
+.footer1{
+    width: 1200px;
+    justify-content: space-between;
+    display: flex;
+}
+.footer1 h3 {
+    padding-right: 80px;
+    color: #FFA300;
+    font-size: 20px;
+}
+.footer1-child{
+    color: #ffffff;
+    font-size: 18px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.footer2{
+    padding-right: 110px;
+    margin-top: 50px ;
+    width: 1200px;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+}
+.footer2-child p{
+    margin-bottom: 15px;
+}
+.footer-row {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-row-child h2{
+    color: #FFA300;
+    margin-bottom: 25px ;
+}
+.footer-row-child p{
+    margin-bottom: 12px;
+}
+.footer-3 {
+    padding: 40px 0;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-3-child{
+    margin: auto 0;
+}
+.footer-3-child p{
+    text-align: center;
+    font-size: 13px;
+    margin: auto;
+}
+.footer-input{
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    border:none;
+    /*border-bottom: 1px solid  #FFA300 ;*/
+    background-color: #00264E;
+    width: 351px;
+    height: 27px;
+}
+/*.footer-input:hover{*/
+/*    border-bottom: 2px solid  #FFA300;*/
+/*}*/
+.footer-icon {
+    margin-top:30px;
+    font-size: 20px;
+}

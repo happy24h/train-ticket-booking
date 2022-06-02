@@ -1,0 +1,70 @@
+
+   
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #customers tr:nth-child(even){background-color:#daecf8;}
+        
+        #customers tr:hover {background-color: #f1e0ca;}
+        /* #customers tr:hover {background-color: #f9d3fb;} */
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #5a9bd5;
+          color: white;
+        }
+       
+        
+        /* <table id="customers">
+          <tr>
+            <th>Id</th>
+            <th>Row</th>
+            <th>Column</th>
+            <th>Price</th>
+            <th>BookingDate</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>100000</td>
+            <td>Chưa đặt chỗ</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>100000</td>
+            <td>Chưa đặt chỗ</td>
+            <td>1</td>
+          </tr> 
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>100000</td>
+            <td>Chưa đặt chỗ</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>100000</td>
+            <td>Chưa đặt chỗ</td>
+            <td>1</td>
+          </tr>
+        </table> */
+        

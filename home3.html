@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tickets.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="header-nav">
+        <div class="grid wide">
+            <div class="row header-nav-row">
+                <div class="l-2"><img src="/assets/img/logo.png" alt=""></div>
+                <div class="l-2"></div>
+                <div class="l-2"><a href="https://happy24h.github.io/train-demo/book-tickets/home.html">Đặt vé</a> </div>
+                <div class="l-2">Nhà ga</div>
+                <div class="l-2">Vé tàu</div>
+                <div class="l-2"><a href="https://happy24h.github.io/train-demo/login/index.html">Liên hệ</a></div>
+            </div> 
+    </div>
+    </div>
+
+    <div class="grid wide">
+    <div class="row" style="margin-top: 20px">
+            <div class="header-left">
+                <div class="header-title"><h3> XEM GIỜ & GIÁ VÉ TÀU</h3></div>
+                <div class="header-input">
+                     <div class="input-group">
+                  <label for="inputGroupSelect01">Chọn ga đi</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+
+                <div class="input-group">
+                    <label for="inputGroupSelect02">Chọn ga đến</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect02">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <form class="row form-check-radio">
+                    <div>
+                        <input type="radio" name="colors" id="red">
+                        <label for="red">Một chiều</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="colors" id="blue">
+                        <label for="blue">Khứ hồi</label>
+                    </div>
+                  </form>
+                  <form class="form-date-input">
+                      <div>
+                        <label for="day-go">Ngày đi</label>
+                      </div>
+                <input type="date" id="day-go" name="birthday">
+                <div>
+                    <label for="day-return">Ngày về</label>
+                </div>
+                
+                <input type="date" id="day-return" name="birthday">
+                <div class="btn-search">
+                    <button>Tìm Kiếm</button>
+                </div>
+              </form> 
+                </div>
+              </div>  
+              
+        <div class="slide">
+            <div class="navigate-slider">
+                <i class="fas fa-angle-left" onClick="Back();"></i>
+                <i class="fas fa-angle-right" onClick="Next();"></i>
+            </div>
+        
+            <div class="move-slider">
+                <img src="assets/img/train1.jpg" alt=""> 
+                <img src="assets/img/train3.jpg" alt=""> 
+                <img src="assets/img/train4.jpg" alt=""> 
+                <img src="assets/img/train5.jpg" alt=""> 
+                <img src="assets/img/train8.jpg" alt=""> 
+                
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="header-child-cart">
+                <h3 class="header-title">Giỏ vé</h3>
+            <div class="cart-buy">
+                <div >Chưa có vé</div>
+                <button class="open-modal-btn">Mua vé</button>
+            </div>
+            </div>
+            <div class="header-child-contact">
+                <h3 >Kết nối với chúng tôi</h3>
+            <div class="cart-buy">
+                <div >facebook</div>
+                <div >youtobe</div>
+                <div >twitter</div>  
+            </div>
+            </div>
+            <div class="header-child-contact2">
+                <h3 >Tra cứu hóa đơn</h3>
+            <div class="cart-buy">
+                <div >
+                    Để tra cứu hóa đơn điện tử, quý khách hàng vui lòng
+                    <a href="#">bấm vào đây</a>  
+                </div> 
+            </div>
+            </div>
+            
+         
+          </div>  
+          
+    </div>
+</div>
+</div>
+
+<!-- tabs -->
+<div>
+    <!-- Tab items -->
+    <div class="tabs tabs-center ">
+        <div class="tab-item active">
+            <i class="tab-icon fas fa-train"></i>
+            Toa 1
+        </div>
+        <div class="tab-item">
+            <i class="tab-icon fas fa-train"></i>
+            Toa 2
+        </div>
+        <div class="tab-item">
+            <i class="tab-icon fas fas fa-train"></i>
+            Toa 3
+        </div>
+        <div class="tab-item">
+            <i class="tab-icon fas fas fa-train"></i>
+            Toa 4
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <h3 class="title-book-ticket">Toa 1: ghế mềm có điều hòa</h3>
+            <div class="grid wide main">
+                <div class="row">
+                    <div class="l-6 container-book-tickets">
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item ">2</div>
+                            <div class="grid-item">3</div>  
+                            <div class="grid-item">4</div>
+                            <div class="grid-item">5</div>
+                            <div class="grid-item ">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item">10</div>  
+                            <div class="grid-item ">11</div>  
+                            <div class="grid-item">12</div>  
+                          </div>
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item">3</div>  
+                            <div class="grid-item ">4</div>
+                            <div class="grid-item">5</div>
+                            <div class="grid-item">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item">10</div>  
+                            <div class="grid-item">11</div>  
+                            <div class="grid-item">12</div>  
+                          </div>
+                     </div>
+        
+                     <div class="l-6 container-book-tickets">
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                   </div>
+                </div> 
+            </div>
+        </div>
+        <div class="tab-pane ">
+            <h3 class="title-book-ticket">Toa 2: ghế mềm có điều hòa</h3>
+            <div class="grid wide main">
+                <div class="row">
+                    <div class="l-6 container-book-tickets">
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item tick">3</div>  
+                            <div class="grid-item">4</div>
+                            <div class="grid-item">5</div>
+                            <div class="grid-item">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item tick">10</div>  
+                            <div class="grid-item">11</div>  
+                            <div class="grid-item tick">12</div>  
+                          </div>
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item">3</div>  
+                            <div class="grid-item">4</div>
+                            <div class="grid-item tick">5</div>
+                            <div class="grid-item ">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item">10</div>  
+                            <div class="grid-item">11</div>  
+                            <div class="grid-item tick">12</div>  
+                          </div>
+                     </div>
+        
+                     <div class="l-6 container-book-tickets">
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item tick">9</div>  
+                          <div class="grid-item tick">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                   </div>
+                </div> 
+            </div>
+        </div>
+        <div class="tab-pane ">
+            <h3 class="title-book-ticket">Toa 3: ghế cứng không điều hòa</h3>
+            <div class="grid wide main">
+                <div class="row">
+                    <div class="l-6 container-book-tickets">
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item ">2</div>
+                            <div class="grid-item">3</div>  
+                            <div class="grid-item">4</div>
+                            <div class="grid-item tick">5</div>
+                            <div class="grid-item ">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item tick">9</div>  
+                            <div class="grid-item tick">10</div>  
+                            <div class="grid-item tick">11</div>  
+                            <div class="grid-item">12</div>  
+                          </div>
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item">3</div>
+                            <div class="grid-item">4</div>
+                            <div class="grid-item">5</div>
+                            <div class="grid-item">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item">10</div>  
+                            <div class="grid-item">11</div>  
+                            <div class="grid-item">12</div>  
+                          </div>
+                     </div>
+        
+                     <div class="l-6 container-book-tickets">
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                   </div>
+                </div> 
+            </div>  
+        </div>
+       
+       
+        <div class="tab-pane ">
+            <h3 class="title-book-ticket">Toa 4: ghế cứng không điều hòa</h3>
+            <div class="grid wide main">
+                <div class="row">
+                    <div class="l-6 container-book-tickets">
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item tick">3</div>  
+                            <div class="grid-item">4</div>
+                            <div class="grid-item">5</div>
+                            <div class="grid-item">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item tick">10</div>  
+                            <div class="grid-item">11</div>  
+                            <div class="grid-item tick">12</div>  
+                          </div>
+                        <div class="grid-container">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item">3</div>  
+                            <div class="grid-item">4</div>
+                            <div class="grid-item tick">5</div>
+                            <div class="grid-item ">6</div>  
+                            <div class="grid-item">7</div>
+                            <div class="grid-item">8</div>
+                            <div class="grid-item">9</div>  
+                            <div class="grid-item">10</div>  
+                            <div class="grid-item">11</div>  
+                            <div class="grid-item tick">12</div>  
+                          </div>
+                     </div>
+        
+                     <div class="l-6 container-book-tickets">
+                      <div class="grid-container">
+                          <div class="grid-item tick">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                      <div class="grid-container">
+                          <div class="grid-item">1</div>
+                          <div class="grid-item">2</div>
+                          <div class="grid-item">3</div>  
+                          <div class="grid-item">4</div>
+                          <div class="grid-item">5</div>
+                          <div class="grid-item">6</div>  
+                          <div class="grid-item">7</div>
+                          <div class="grid-item">8</div>
+                          <div class="grid-item">9</div>  
+                          <div class="grid-item">10</div>  
+                          <div class="grid-item">11</div>  
+                          <div class="grid-item">12</div>  
+                        </div>
+                   </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="content3-end">
+    <p class="content3-child">Tại sao chọn duongsatvietnam.vn?</p>
+</div>
+    <div class="content5">
+
+
+        <div class="row_2 places-list_2">
+            <div class="col_2 col-third_2">
+                <a href=""><img src="https://www.vemaybay.vn/api/imagefilter/crop/181/155/support_24-7.png" alt="New york" class="place-img"/></a>
+                <div class="place-bodys_2">
+                    <h3 class="place-heading_2">Hỗ trợ 24/7</h3>
+                    <p class="place-time_2 content4-a">duongsatvietnam.vn luôn săn sàng tư vấn và giải đáp thắc mắc của Khách hàng 24/7</p>
+
+                </div>
+            </div>
+            <div class="col_2 col-third_2">
+                <a href=""><img src="https://www.vemaybay.vn/api/imagefilter/crop/181/155/gia-ve-tot.png" alt="New york" class="place-img"/></a>
+                <div class="place-bodys_2">
+                    <h3 class="place-heading_2">Giá vé tốt nhất</h3>
+                    <p class="place-time_2 content4-a">Đảm bảo giá vé tàu tốt nhất cho nhu cầu đặt mua vé tàu theo các chặng khác nhau của Khách hàng</p>
+
+                </div>
+            </div>
+            <div class="col_2 col-third_2">
+                <a href=""><img src="https://www.vemaybay.vn/api/imagefilter/crop/181/155/dich-vu-da-nang.png" alt="New york" class="place-img"/></a>
+                <div class="place-bodys_2">
+                    <h3 class="place-heading_2">Dịch vụ đa dạng</h3>
+                    <p class="place-time_2 content4-a">Ngoài dịch vụ vé tàu chung tôi còn có dịch vụ thuê xe và khách sạn phục vụ Khách hàng</p>
+
+                </div>
+            </div>
+
+            <div class="col_2 col-third_2">
+                <a href=""><img src="https://www.vemaybay.vn/api/imagefilter/crop/181/155/giao-ve-tan-noi.png" alt="New york" class="place-img"/></a>
+                <div class="place-bodys_2">
+                    <h3 class="place-heading_2">Giao vé tận nơi</h3>
+                    <p class="place-time_2 content4-a">Giao vé tận nơi nhanh chóng, uy tín, nhận vé mới thanh toán</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!--footer-->
+<footer class="footer-all">
+<div class="content-footer">
+    <div class="footer-width" >
+        <div class="footer-float">
+            <h1><img class="footer-float-img" src="	https://www.vemaybay.vn/images/hotline-icon.png" alt="">Hotline</h1>
+            <p>0243.85.06.999</p>
+        </div>
+        <div class="footer-float">
+            <h1><img class="footer-float-img" src="https://www.vemaybay.vn/images/hotline-icon.png" alt="">Điện thoại</h1>
+            <p> 0243.85.06.999</p>
+        </div>
+        <div class="footer-right"><input class="footer-input" type="text"  placeholder="Chúng tôi có thể giúp gì cho bạn " ><i class="footer-icon fas fa-search"></i></div>
+
+    </div>
+    <div class="footer1">
+        <h3>Vé tàu theo thành phố</h3>
+        <div class="footer1-child">
+            <p>vé tàu theo quốc gia</p>
+            <p>vé tàu theo hãng hàng không</p>
+            <p>các khách sạn hàng đầu</p>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="footer2-child">
+            <p>vé tàu đi đà nẵng</p>
+            <p>vé tàu đi đà lạt</p>
+            <p>vé tàu đi đà lạt</p>
+        </div>
+        <div class="footer2-child">
+            <p>vé tàu đi hà nội</p>
+            <p>vé tàu đi vinh</p>
+            <p>vé tàu đi buôn ma thuột</p>
+        </div>
+        <div class="footer2-child">
+            <p>vé tàu đi phú quốc</p>
+            <p>vé tàu đi hải phòng</p>
+
+        </div>
+        <div class="footer2-child">
+            <p>vé tàu đi tp.hcm (sài gòn)</p>
+            <p>vé tàu đi nha trang</p>
+        </div>
+    </div>
+    <div class="footer-row">
+        <div class="footer-row-child">
+            <h2>Thông tin thêm</h2>
+            <p>Điều khoản sử dụng</p>
+            <p>Chính sách bảo mật</p>
+            <p>Hướng dẫn đặt vé</p>
+            <p>Thanh toán tại các Cửa Hàng Tiện Lợi 24/7</p>
+            <p>Hướng dẫn thanh toán và giao nhận</p>
+        </div>
+        <div class="footer-row-child">
+            <h2>Về chúng tôi</h2>
+            <p>Giới thiệu về duongsatvietnam.vn</p>
+            <p>newstrain.air.tickets</p>
+            <p>Khách hàng nói về chúng tôi</p>
+            <p>Giải thường</p>
+        </div>
+        <div class="footer-row-child">
+            <h2>Hỗ trợ</h2>
+            <p>Phản hồi</p>
+            <p>Câu hỏi thường gặp</p>
+            <p>Tư vấn hỗ trợ đặt vé</p>
+        </div>
+        <div class="footer-row-child">
+            <h2>Trụ sở</h2>
+            <p>Văn phòng chính: ngõ 97 Thái Thịnh, Đống Đa, Hà Nội</p>
+            <p>Chi Nhánh: Nguyễn Kiệm, Phường 3,Gò Vấp,HCM</p>
+            <p>Văn phòng chính: ngõ 97 Thái Thịnh, Đống Đa, Hà Nội</p>
+            <p>Chi Nhánh: Nguyễn Kiệm, Phường 3,Gò Vấp,HCM</p>
+            
+        </div>
+    </div>
+    <div class="footer-3">
+        <div><img style="color: orange" src="/assets/img/logo.png" alt=""></div>
+        <div class="footer-3-child">
+            <p>Trụ sở chính: ngõ 97 Thái Thịnh, Đống Đa, Hà Nội ( Tổng công ty Đường sắt Việt Nam. )</p>
+            <p>Trân trọng cảm ơn!..</p>
+        </div>
+        <div><img src="/assets/img/logo.png" alt=""></div>
+    </div>
+</div>
+</footer>
+
+<!-- Model -->
+<!-- <button class="open-modal-btn">Open Modal</button> -->
+    <div class="modal hide">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <p>Chào mừng quý khách...</p>
+                <i class="fas fa-times"></i>
+
+            </div>
+            <div class="modal__body">
+                <h2>Vé tàu</h2>
+                <p>Chưa có vé tàu vui lòng thử lại sau</p>
+
+            </div>
+            <div class="modal__footer">
+                <button>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+    
+</body>
+</html>
